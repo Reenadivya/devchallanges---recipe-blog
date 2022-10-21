@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700&family=Playfair+Display:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+}
+/* FONT FAMILIES
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
+
+#whole__container {
+  margin: 60px 200px;
+}
+
+.nav__bar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.nav__bar--heading {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.nav__bar--subheading {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav__bar--subheading-para {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #4f4f4f;
+  padding-left: 16px;
+  width: 85%;
+}
+
+.img__container--cheesecake {
+  width: 100%;
+  margin: 48px 0;
+}
+
+.ingredients__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ingredients__container--left {
+  color: #333333;
+  width: 70%;
+}
+
+.ingredients__container--left-heading {
+  font-family: "Playfair Display", serif;
+
+  font-size: 36px;
+  padding: 16px 0 36px 0;
+}
+
+.ingredients__subcontainer--heading {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.ingredients__subcontainer--ul {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+  width: 100%;
+}
+
+.container__checkbox {
+  padding: 8px 0;
+  width: 100%;
+}
+
+input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.ingredients__container--right {
+  width: 216px;
+  height: 367px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ingredients__container--right-indiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 128px;
+  height: 80px;
+}
+
+.fas,
+.fa-regular {
+  font-size: 24px;
+}
+
+.prep__details--header {
+  text-transform: uppercase;
+  color: #bdbdbd;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.prep__details {
+  width: 100%;
+}
+
+.prep__details--subheader {
+  font-size: 16px;
+}
+
+.orange {
+  color: #f2994a;
+}
+
+.utensil__icon {
+  padding-right: 16px;
+}
+
+.step_no {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 24px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f2994a;
+  color: #ffffff;
+}
+
+.step__container--para {
+  width: 85%;
+  padding-left: 40px;
+  line-height: 24px;
+}
+
+.steps__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.step__container {
+  font-family: "Montserrat", sans-serif;
+  padding: 24px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.source {
+  font-family: "Montserrat", sans-serif;
+  color: #bdbdbd;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 56px;
+}
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  color: #828282;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  #whole__container {
+    margin: 40px 20px;
+  }
+
+  .ingredients__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .ingredients__container--right {
+    box-shadow: none;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+
+  .clock {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .ingredients__container--right-indiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 33.3%;
+    margin: 32px 0px;
+    height: 100%;
+  }
+
+  .fas,
+  .fa-regular {
+    font-size: 32px;
+  }
+
+  .prep__details--header {
+    text-transform: uppercase;
+    color: #bdbdbd;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .prep__details--subheader {
+    font-size: 16px;
+  }
+}
